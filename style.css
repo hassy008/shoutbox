@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0
+}
+
+body {
+    font-family: Verdana;
+    font-size: 14px;
+    color: #444
+}
+
+.wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.clr {
+    overflow: hidden;
+}
+
+.headsec,
+.footsec {
+    background: grey;
+    padding: 10px;
+    text-align: center;
+}
+
+.headsec h2,
+.footsec h2 {}
+
+.content {
+    border: 10px solid greenyellow;
+    min-height: 400px;
+}
+
+.box {
+    border: 5px solid black;
+    margin: 30px auto;
+    padding: 20px;
+    width: 500px;
+    height: 150px;
+    overflow: scroll;
+}
+
+.box ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.box ul li {
+    display: block;
+    border-bottom: 1px dashed #ddd;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+
+/* <<last-child uses to remove the dash from the last line on your table>> */
+
+.box ul li:last-child {
+    border-bottom: 0px dashed #ddd;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.box span {
+    color: brown;
+}
+
+.shoutbox {
+    border: 5px solid #999;
+    margin: 20px auto 10px;
+    padding: 20px;
+    width: 500px;
+}
+
+input[type="text"] {
+    padding: 5px;
+    width: 300px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    background: #777;
+    border: 1px solid #444;
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+    padding: 5px 20px;
+}
