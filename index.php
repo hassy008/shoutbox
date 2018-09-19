@@ -1,3 +1,8 @@
+<?php
+    include_once "/class/shout.php";
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
