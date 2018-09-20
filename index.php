@@ -1,5 +1,6 @@
 <?php
-    include_once "/class/shout.php";
+    include_once "class/shout.php";
+   $shout = new Shout();
 
 ?>
 
@@ -21,18 +22,13 @@
         <section class='content clr'>
             <div class='box'>
                 <ul>
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
-                   <li><span>5:30pm</span>-<b>Rumman</b>Hello, howdy</li> 
+<?php
+    $getData= $shout->getAllData();
+    if ($getData) {
+        while($data=$getData->fetch_assoc())  {?>
+             <li><span><?php echo $data['name'];?></span>-<b><?php echo $data['body'];?></b><?php echo $data ['time'];?></li>
+ <?php    }  } ?>
+                                
                 </ul>
             </div>
 
